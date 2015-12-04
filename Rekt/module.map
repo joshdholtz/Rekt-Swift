@@ -1,6 +1,4 @@
 framework module Rekt {
-	umbrella header "Rekt.h"
-	
 	export *
 	module * { export * }
 }
