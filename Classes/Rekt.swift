@@ -16,8 +16,16 @@ extension CGRect {
 	public typealias AlterAll = (x: CGFloat, y: CGFloat, width: CGFloat, height: CGFloat) -> Rekt
 	public typealias Alter = (_: CGFloat) -> CGFloat
 	
+	public var x: CGFloat {
+		return origin.x
+	}
+	
+	public var y: CGFloat {
+		return origin.x
+	}
+	
 	private var rekt: Rekt {
-		return (origin.x,origin.y,size.width,size.height)
+		return (x,y,width,height)
 	}
 	
 	public func alter(alter: AlterAllInout) -> CGRect {
