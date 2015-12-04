@@ -6,8 +6,4 @@
 //  Copyright © 2015 RokkinCat. All rights reserved.
 //
 
-#ifndef Rekt_h
-#define Rekt_h
-
-
-#endif /* Rekt_h */
+@import Foundation
