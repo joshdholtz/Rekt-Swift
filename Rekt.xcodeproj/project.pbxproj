@@ -19,6 +19,7 @@
 		039BB1D41C11773A009EFB39 /* RektFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */; };
 		039BB1D81C11773A009EFB39 /* Rekt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; };
 		039BB1D91C11773A009EFB39 /* Rekt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		039BB21E1C1182DA009EFB39 /* Rekt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1BC1C117047009EFB39 /* Rekt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -383,6 +384,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039BB21E1C1182DA009EFB39 /* Rekt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Rekt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.Rekt;
@@ -535,6 +538,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Rekt/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.Rekt;
