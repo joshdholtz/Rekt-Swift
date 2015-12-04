@@ -10,17 +10,30 @@ Functional approach to altering CGRect
 
 ## Quick Example
 
+Replay the "Ugly Way" with the "Good Looking Way" :blush:
+
+### Ugly Way
+```swift
+var rect = someFrame
+rect.origin.x += 10
+rect.origin.y += 5
+rect.size.width = 200
+rect.size.height = 100
+```
+
+### Good Looking Way
+
 ```swift
 // Alter x, y, width, and height all at once
 // Return a tuple of (x,y,width,height)
-let rect = CGRectZero.alter { (x, y, width, height) -> Rekt in
+let rect = someFrame.alter { (x, y, width, height) -> Rekt in
 	(x+10,y+5,200,100)
 }
 
 // Chain calls for x, y, width, and height together
 // Each x, y, width, and height have a function that
 // takes a closure and one that takes a value
-let rect = CGRectZero.alterX({$0+10})
+let rect = someFrame.alterX({$0+10})
 	.alterY({$0+5})
 	.alterWidth(200)
 	.alterHeight(100)
@@ -53,7 +66,7 @@ If you prefer not to use either of the aforementioned dependency managers, you c
 
 ### Alter All
 ```swift
-let rect = frame.alter { (x, y, width, height) -> Rekt in
+let rect = someFrame.alter { (x, y, width, height) -> Rekt in
 	(x+10,y+5,200,100)
 }
 ```
@@ -62,7 +75,7 @@ let rect = frame.alter { (x, y, width, height) -> Rekt in
 - Uses inout variables instead of returning tuple
 - Don't need to modify all variables
 ```swift
-let rect = frame.alter({ (x, y, width, height) -> Void in
+let rect = someFrame.alter({ (x, y, width, height) -> Void in
 	x += 10
 	y += 5
 	width = 200
@@ -73,7 +86,7 @@ let rect = frame.alter({ (x, y, width, height) -> Void in
 
 ### Alter Individual By Chaining
 ```swift
-let rect = frame.alterX({$0+10})
+let rect = someFrame.alterX({$0+10})
 	.alterY({$0+5})
 	.alterWidth({$0+200})
 	.alterHeight({$0+100})
@@ -81,7 +94,7 @@ let rect = frame.alterX({$0+10})
 
 ### Alter Individual By Value 
 ```swift
-let rect = frame.alterX(10)
+let rect = someFrame.alterX(10)
 	.alterY(5)
 	.alterWidth(200)
 	.alterHeight(100)
