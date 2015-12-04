@@ -14,6 +14,12 @@
 		039BB1A61C117003009EFB39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039BB1A41C117003009EFB39 /* LaunchScreen.storyboard */; };
 		039BB1B11C117003009EFB39 /* RektTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1B01C117003009EFB39 /* RektTests.swift */; };
 		039BB1BD1C117047009EFB39 /* Rekt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1BC1C117047009EFB39 /* Rekt.swift */; };
+		039BB1C61C11773A009EFB39 /* RektFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 039BB1C51C11773A009EFB39 /* RektFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		039BB1CD1C11773A009EFB39 /* Rekt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; };
+		039BB1D41C11773A009EFB39 /* RektFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */; };
+		039BB1D81C11773A009EFB39 /* Rekt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; };
+		039BB1D91C11773A009EFB39 /* Rekt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		039BB1E21C117800009EFB39 /* Rekt.h in Headers */ = {isa = PBXBuildFile; fileRef = 039BB1E11C1177CD009EFB39 /* Rekt.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +30,42 @@
 			remoteGlobalIDString = 039BB1971C117003009EFB39;
 			remoteInfo = Rekt;
 		};
+		039BB1CE1C11773A009EFB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039BB1901C117003009EFB39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039BB1C21C11773A009EFB39;
+			remoteInfo = RektFramework;
+		};
+		039BB1D01C11773A009EFB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039BB1901C117003009EFB39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039BB1971C117003009EFB39;
+			remoteInfo = Rekt;
+		};
+		039BB1D61C11773A009EFB39 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039BB1901C117003009EFB39 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039BB1C21C11773A009EFB39;
+			remoteInfo = RektFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		039BB1DD1C11773A009EFB39 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				039BB1D91C11773A009EFB39 /* Rekt.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		039BB1981C117003009EFB39 /* Rekt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rekt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +79,13 @@
 		039BB1B01C117003009EFB39 /* RektTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RektTests.swift; sourceTree = "<group>"; };
 		039BB1B21C117003009EFB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		039BB1BC1C117047009EFB39 /* Rekt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rekt.swift; sourceTree = "<group>"; };
+		039BB1C31C11773A009EFB39 /* Rekt.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Rekt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		039BB1C51C11773A009EFB39 /* RektFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RektFramework.h; sourceTree = "<group>"; };
+		039BB1C71C11773A009EFB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039BB1CC1C11773A009EFB39 /* RektFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RektFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RektFrameworkTests.swift; sourceTree = "<group>"; };
+		039BB1D51C11773A009EFB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039BB1E11C1177CD009EFB39 /* Rekt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rekt.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039BB1D81C11773A009EFB39 /* Rekt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +101,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039BB1BF1C11773A009EFB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039BB1C91C11773A009EFB39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039BB1CD1C11773A009EFB39 /* Rekt.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +128,8 @@
 				039BB1BB1C11703D009EFB39 /* Classes */,
 				039BB19A1C117003009EFB39 /* Rekt */,
 				039BB1AF1C117003009EFB39 /* RektTests */,
+				039BB1C41C11773A009EFB39 /* RektFramework */,
+				039BB1D21C11773A009EFB39 /* RektFrameworkTests */,
 				039BB1991C117003009EFB39 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +139,8 @@
 			children = (
 				039BB1981C117003009EFB39 /* Rekt.app */,
 				039BB1AC1C117003009EFB39 /* RektTests.xctest */,
+				039BB1C31C11773A009EFB39 /* Rekt.framework */,
+				039BB1CC1C11773A009EFB39 /* RektFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +148,7 @@
 		039BB19A1C117003009EFB39 /* Rekt */ = {
 			isa = PBXGroup;
 			children = (
+				039BB1E11C1177CD009EFB39 /* Rekt.h */,
 				039BB19B1C117003009EFB39 /* AppDelegate.swift */,
 				039BB19D1C117003009EFB39 /* ViewController.swift */,
 				039BB19F1C117003009EFB39 /* Main.storyboard */,
@@ -107,7 +176,37 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		039BB1C41C11773A009EFB39 /* RektFramework */ = {
+			isa = PBXGroup;
+			children = (
+				039BB1C51C11773A009EFB39 /* RektFramework.h */,
+				039BB1C71C11773A009EFB39 /* Info.plist */,
+			);
+			path = RektFramework;
+			sourceTree = "<group>";
+		};
+		039BB1D21C11773A009EFB39 /* RektFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */,
+				039BB1D51C11773A009EFB39 /* Info.plist */,
+			);
+			path = RektFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		039BB1C01C11773A009EFB39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039BB1E21C117800009EFB39 /* Rekt.h in Headers */,
+				039BB1C61C11773A009EFB39 /* RektFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		039BB1971C117003009EFB39 /* Rekt */ = {
@@ -117,10 +216,12 @@
 				039BB1941C117003009EFB39 /* Sources */,
 				039BB1951C117003009EFB39 /* Frameworks */,
 				039BB1961C117003009EFB39 /* Resources */,
+				039BB1DD1C11773A009EFB39 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				039BB1D71C11773A009EFB39 /* PBXTargetDependency */,
 			);
 			name = Rekt;
 			productName = Rekt;
@@ -145,6 +246,43 @@
 			productReference = 039BB1AC1C117003009EFB39 /* RektTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		039BB1C21C11773A009EFB39 /* RektFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039BB1DA1C11773A009EFB39 /* Build configuration list for PBXNativeTarget "RektFramework" */;
+			buildPhases = (
+				039BB1BE1C11773A009EFB39 /* Sources */,
+				039BB1BF1C11773A009EFB39 /* Frameworks */,
+				039BB1C01C11773A009EFB39 /* Headers */,
+				039BB1C11C11773A009EFB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RektFramework;
+			productName = RektFramework;
+			productReference = 039BB1C31C11773A009EFB39 /* Rekt.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		039BB1CB1C11773A009EFB39 /* RektFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039BB1DE1C11773A009EFB39 /* Build configuration list for PBXNativeTarget "RektFrameworkTests" */;
+			buildPhases = (
+				039BB1C81C11773A009EFB39 /* Sources */,
+				039BB1C91C11773A009EFB39 /* Frameworks */,
+				039BB1CA1C11773A009EFB39 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039BB1CF1C11773A009EFB39 /* PBXTargetDependency */,
+				039BB1D11C11773A009EFB39 /* PBXTargetDependency */,
+			);
+			name = RektFrameworkTests;
+			productName = RektFrameworkTests;
+			productReference = 039BB1CC1C11773A009EFB39 /* RektFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -159,6 +297,13 @@
 						CreatedOnToolsVersion = 7.1.1;
 					};
 					039BB1AB1C117003009EFB39 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 039BB1971C117003009EFB39;
+					};
+					039BB1C21C11773A009EFB39 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					039BB1CB1C11773A009EFB39 = {
 						CreatedOnToolsVersion = 7.1.1;
 						TestTargetID = 039BB1971C117003009EFB39;
 					};
@@ -179,6 +324,8 @@
 			targets = (
 				039BB1971C117003009EFB39 /* Rekt */,
 				039BB1AB1C117003009EFB39 /* RektTests */,
+				039BB1C21C11773A009EFB39 /* RektFramework */,
+				039BB1CB1C11773A009EFB39 /* RektFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +342,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		039BB1AA1C117003009EFB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039BB1C11C11773A009EFB39 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039BB1CA1C11773A009EFB39 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -222,6 +383,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		039BB1BE1C11773A009EFB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039BB1C81C11773A009EFB39 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039BB1D41C11773A009EFB39 /* RektFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -229,6 +405,21 @@
 			isa = PBXTargetDependency;
 			target = 039BB1971C117003009EFB39 /* Rekt */;
 			targetProxy = 039BB1AD1C117003009EFB39 /* PBXContainerItemProxy */;
+		};
+		039BB1CF1C11773A009EFB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039BB1C21C11773A009EFB39 /* RektFramework */;
+			targetProxy = 039BB1CE1C11773A009EFB39 /* PBXContainerItemProxy */;
+		};
+		039BB1D11C11773A009EFB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039BB1971C117003009EFB39 /* Rekt */;
+			targetProxy = 039BB1D01C11773A009EFB39 /* PBXContainerItemProxy */;
+		};
+		039BB1D71C11773A009EFB39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039BB1C21C11773A009EFB39 /* RektFramework */;
+			targetProxy = 039BB1D61C11773A009EFB39 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -379,6 +570,68 @@
 			};
 			name = Release;
 		};
+		039BB1DB1C11773A009EFB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RektFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFramework;
+				PRODUCT_NAME = Rekt;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		039BB1DC1C11773A009EFB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RektFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFramework;
+				PRODUCT_NAME = Rekt;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		039BB1DF1C11773A009EFB39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RektFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rekt.app/Rekt";
+			};
+			name = Debug;
+		};
+		039BB1E01C11773A009EFB39 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RektFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Rekt.app/Rekt";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -404,6 +657,22 @@
 			buildConfigurations = (
 				039BB1B91C117003009EFB39 /* Debug */,
 				039BB1BA1C117003009EFB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		039BB1DA1C11773A009EFB39 /* Build configuration list for PBXNativeTarget "RektFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039BB1DB1C11773A009EFB39 /* Debug */,
+				039BB1DC1C11773A009EFB39 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		039BB1DE1C11773A009EFB39 /* Build configuration list for PBXNativeTarget "RektFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039BB1DF1C11773A009EFB39 /* Debug */,
+				039BB1E01C11773A009EFB39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
