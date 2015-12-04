@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import RektFramework
+@testable import Rekt
 
 class RektFrameworkTests: XCTestCase {
     

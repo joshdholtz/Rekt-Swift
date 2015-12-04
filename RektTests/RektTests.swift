@@ -20,6 +20,16 @@ class RektTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
+	
+	func testUglyWay() {
+		var rect = CGRectZero
+		rect.origin.x += 10
+		rect.origin.y += 5
+		rect.size.width = 200
+		rect.size.height = 100
+		
+		assert(rect == testRect)
+	}
     
     func testAlterAllInout() {
 		let rect = CGRectZero.alter({ (x, y, width, height) -> Void in
