@@ -19,7 +19,6 @@
 		039BB1D41C11773A009EFB39 /* RektFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */; };
 		039BB1D81C11773A009EFB39 /* Rekt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; };
 		039BB1D91C11773A009EFB39 /* Rekt.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 039BB1C31C11773A009EFB39 /* Rekt.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		039BB21D1C11812A009EFB39 /* Rekt.h in Headers */ = {isa = PBXBuildFile; fileRef = 039BB21C1C11812A009EFB39 /* Rekt.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,8 +84,6 @@
 		039BB1CC1C11773A009EFB39 /* RektFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RektFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039BB1D31C11773A009EFB39 /* RektFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RektFrameworkTests.swift; sourceTree = "<group>"; };
 		039BB1D51C11773A009EFB39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		039BB2191C117FF3009EFB39 /* module.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.map; sourceTree = "<group>"; };
-		039BB21C1C11812A009EFB39 /* Rekt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rekt.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,8 +146,6 @@
 		039BB19A1C117003009EFB39 /* Rekt */ = {
 			isa = PBXGroup;
 			children = (
-				039BB21C1C11812A009EFB39 /* Rekt.h */,
-				039BB2191C117FF3009EFB39 /* module.map */,
 				039BB19B1C117003009EFB39 /* AppDelegate.swift */,
 				039BB19D1C117003009EFB39 /* ViewController.swift */,
 				039BB19F1C117003009EFB39 /* Main.storyboard */,
@@ -203,7 +198,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039BB21D1C11812A009EFB39 /* Rekt.h in Headers */,
 				039BB1C61C11773A009EFB39 /* RektFramework.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +577,7 @@
 				INFOPLIST_FILE = RektFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Rekt/module.map;
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFramework;
 				PRODUCT_NAME = Rekt;
 				SKIP_INSTALL = YES;
@@ -604,7 +598,7 @@
 				INFOPLIST_FILE = RektFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = Rekt/module.map;
+				MODULEMAP_FILE = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joshholtz.RektFramework;
 				PRODUCT_NAME = Rekt;
 				SKIP_INSTALL = YES;
